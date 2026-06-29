@@ -257,7 +257,7 @@ header {
 }
 .section-title-text { font-size: 1.1rem; font-weight: 700; }
 .section-count { font-size: 12px; color: var(--text3); margin-top: 1px; }
-.fn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+.fn-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; align-items: start; }
 
 /* ─── Function card ─── */
 .fn-card {
@@ -267,6 +267,7 @@ header {
   overflow: hidden;
   transition: box-shadow 0.2s, border-color 0.2s, background var(--transition);
   box-shadow: var(--shadow);
+  align-self: start;
 }
 .fn-card:hover { box-shadow: var(--shadow-md); }
 .fn-card.open { border-color: var(--accent); }
@@ -534,10 +535,10 @@ footer b { color: var(--text2); }
   <h1>JavaScript <code>Built-ins</code></h1>
   <p>Predefined functions grouped by type. Click any card to expand examples. Use the filter to focus on a category.</p>
   <div class="stats">
-    <div class="stat"><div class="stat-num">45+</div><div class="stat-label">functions</div></div>
-    <div class="stat"><div class="stat-num">5+</div><div class="stat-label">examples each</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">examples each</div></div>
-    <div class="stat"><div class="stat-num">5</div><div class="stat-label">leetcode problems each</div></div>
+    <div class="stat"><div class="stat-num">38</div><div class="stat-label">functions covered</div></div>
+    <div class="stat"><div class="stat-num">203</div><div class="stat-label">real code examples</div></div>
+    <div class="stat"><div class="stat-num">195</div><div class="stat-label">LeetCode problems</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-label">categories</div></div>
   </div>
 </div>
 
@@ -569,7 +570,7 @@ footer b { color: var(--text2); }
     </a>
   </div>
   <div style="font-size:12px;color:var(--text3);border-top:1px solid var(--border);padding-top:12px;">
-    45+ JS built-in functions · 5+ examples each · 195 LeetCode problems · Built for senior interview prep
+    38 JS built-in functions · 203 real code examples · 195 LeetCode problems · 5 categories
   </div>
 </footer>
 
